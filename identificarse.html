@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Colores:
+        - Azul -> rgb(81,127,231) - #517FE7
+        - Negro -> rgb(0,0,0)     
+        - Blanco -> rgb(255,255,255)
+        Negro y blanco están en Bootstrapp
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PcProfesional</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #mainContentId 
+        {
+            height:65.5vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="container-fluid">
+        <div class="row bg-black px-3 py-1">
+            <div class="col-2 text-center">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="col-5 col-sm-7 col-md-2"></div>
+            <div class="d-none d-md-block col-md-4 my-auto">
+                <form action="#" method="get">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="buscar" placeholder="Buscar artículos" aria-label="Username" aria-describedby="basic-addon1">
+                        <button class="btn btn-light" type="submit" id="button-addon2"><span class="bi bi-search"></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-block d-md-none col-1 my-auto me-2 mx-sm-0 text-end">
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-search"></i></a>
+            </div>
+            <div class="d-none d-md-block col-md-2"></div>
+            <div class="col-1 my-auto me-2 mx-sm-0 text-end">
+                <a class="btn btn-dark" href="identificarse.html"><i class="bi bi-person"></i></a>
+            </div>
+            <div class="col-1 my-auto text-start">
+                <a class="btn btn-dark position-relative" href="cesta.html">
+                    <i class="bi bi-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-small">3</span>
+                </a>
+            </div>
+        </div>
+        <div class="row collapse bg-lightblue justify-content-center" id="collapseSearch">
+            <div class="col-10 my-3">
+                <form action="#" method="get">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="buscar" placeholder="Buscar artículos" aria-label="Username" aria-describedby="basic-addon1">
+                        <button class="btn btn-light" type="submit" id="button-addon2"><span class="bi bi-search"></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-md menu">
+                <div class="container-fluid">
+                    <button class="btn d-inline d-md-none py-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasExample">
+                        <i class="bi bi-list fs-5"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-start bg-lightblue" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn cerrar" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="bi bi-x-lg text-white"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-around w-100">
+                                <li class="nav-item rounded-1 px-1">
+                                    <a class="nav-link text-decoration-none" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item rounded-1 px-1">
+                                    <a class="nav-link text-decoration-none" href="ofertas.html">Ofertas</a>
+                                </li>
+                                <li class="nav-item rounded-1 px-1">
+                                    <a class="nav-link text-decoration-none" href="ultimasNovedades.html">Últimas novedades</a>
+                                </li>
+                                <li class="nav-item dropdown rounded-1 px-1">
+                                    <a class="nav-link dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categorias
+                                    </a>
+                                    <ul class="dropdown-menu bg-lightblue mb-2 border-0">
+                                        <li><a class="dropdown-item text-decoration-none" href="catOrdenadores1.html">Ordenadores</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="catPerifericos1.html">Periféricos</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="catSoftware.html">Software</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item rounded-1 px-1">
+                                    <a class="nav-link text-decoration-none" href="quienesSomos.html">Quienes somos</a>
+                                </li>
+                                <li class="nav-item rounded-1 px-1">
+                                    <a class="nav-link text-decoration-none" aria-disabled="true" href="porqueComprar.html">¿Por qué comprar?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>       
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="container-fluid align-self-center" id="mainContentId">
+        <div class="row h-100 justify-content-between align-items-center">
+            <!-- Parte izquierda que se ocultará en dispositivos más pequeños que 'md' -->
+            <div class="col-6 d-none d-lg-block" id="parteIzquierda">
+                <div class="container ms-5">
+                    <div class="row ms-5">
+                        <div class="col-2" id="iconosIdentificarse">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h4 class="fw-bold">Gestiona tus pedidos</h4>
+                            <p>Ten el control de todos tus pedidos y recibe notificaciones con el seguimiento</p>
+                        </div>
+                    </div>
+                    <div class="row ms-5">
+                        <div class="col-2 ms" id="iconosIdentificarse">
+                            <i class="bi bi-bag-heart"></i>
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h4 class="fw-bold">Lista de deseos personalizada</h4>
+                            <p>Guarda tus productos favoritos en las listas de deseos personalizadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Parte derecha que se mostrará en todos los tamaños de pantalla -->
+            <div class="col-12 col-lg-6 justify-content-center mx-auto text-center" id="parteDerecha">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <!-- Tu formulario de inicio de sesión -->
+                            <h2 class="fw-bold">Iniciar sesión</h2>
+                            <button class="w-100 mt-5 justify-content-center border-1 border-black bg-white">
+                                <h5>
+                                    <i class="fab fa-google"></i> Iniciar sesión con Google
+                                </h5>
+                            </button>
+                            <hr class="w-100">
+                            <form action="" class="justify-content-center">
+                                <input type="email" name="email" id="email" class="w-75" placeholder="E-mail*">
+                                <input type="password" name="password" id="password" class="w-75 mt-4" placeholder="Contraseña*">
+                                <input type="submit" value="Iniciar sesión" class="w-75 mt-4 justify-content-centery">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <div class="container-fluid bg-black p-0 mt-5 mb-0">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 mt-3">
+                    <!-- Columna 1 -->
+                    <div class="columna mt-4 text-center" id="titulosColumnas">
+                        <h5>Quiénes somos</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-3">
+                    <!-- Columna 2 -->
+                    <div class="columna mt-4 text-center" id="titulosColumnas">
+                        <h5>¿Por qué comprar?</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-3">
+                    <!-- Columna 3 -->
+                    <div class="columna mt-4 text-center" id="titulosColumnas">
+                        <h5>Comunidad</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-3">
+                    <!-- Columna 4 -->
+                    <div class="columna mt-4 text-center" id="titulosColumnas">
+                        <h5>Métodos de pago</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mb-0 text-center" id="copyFooter">&copy; 2023 Alejandro Ríos & Raúl Yélamos. Todos los derechos reservados.</p>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

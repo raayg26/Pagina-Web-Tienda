@@ -1,0 +1,125 @@
+/* Estilos para porqueComprar.html */
+.btn-blue {
+    background-color: #3F64B5;
+}
+
+.btn-blue:hover {
+    background-color: #3F64B5;
+}
+
+.btn-blue.show {
+    background-color: #5171b6 !important;
+}
+
+#nav-tab {
+    font-size: 15px;
+}
+
+/* Estilos para las ofertas */
+.cajaOferta{
+    top: 60%;
+    right: 10%;
+}
+
+/* Estilos para el nav */
+.text-small{
+    font-size: 9px;
+}
+
+.menu {
+    background-color: #3F64B5;
+}
+
+.dropdown-item:hover , .offcanvas-body .nav-item:hover, .cerrar:hover{
+    background-color: #456fc9;
+    text-decoration: none;
+}
+
+.bg-blue{
+    background-color: #3F64B5;
+}
+
+.bg-lightblue{
+    background-color: #3f64b5ef;
+}
+
+.bg-lightwhite{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos para el carrusel */
+.carousel-indicators button 
+{
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+}
+.card 
+{
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+.card:hover 
+{
+    transform: scale(0.9); 
+}
+
+/* Estilos para el footer */
+#titulosColumnas
+{
+    color: #3F64B5;
+}
+
+.offcanvas-body .nav-item a
+{
+    color: white;
+}
+.offcanvas-body .nav-item a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+#itemFooter
+{
+    color: white;
+}
+    #itemFooter a:hover 
+    {
+        text-decoration: none !important;
+        background-color:  rgba(141, 141, 141, 0.58) !important;
+    }
+    
+#copyFooter
+{
+    color: rgba(81, 126, 231, 0.457);
+}
+
+/* Estilos identificarse */
+#iconosIdentificarse i
+{
+    font-size: 4rem;
+}
+#parteIzquierda
+{
+    border-right: 1px solid #CCCCCC;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+/* Estilos cesta */
+
+#botonPedido
+{
+    background-color: #3F64B5;
+    border: #CCCCCC;
+}
+
+#botonPedido:hover
+{
+    background-color: #3f64b58c;
+}
+

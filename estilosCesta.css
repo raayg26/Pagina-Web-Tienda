@@ -1,0 +1,70 @@
+/* Estilos para el nav */
+.text-small{
+    font-size: 9px;
+}
+
+.menu {
+    background-color: #3F64B5;
+}
+
+.dropdown-item:hover , .offcanvas-body .nav-item:hover, .cerrar:hover{
+    background-color: #456fc9;
+    text-decoration: none;
+}
+
+.bg-blue{
+    background-color: #3F64B5;
+}
+
+.bg-lightblue{
+    background-color: #3f64b5bb;
+}
+
+.bg-lightwhite{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Estilos para el footer */
+#titulosColumnas
+{
+    color: #3F64B5;
+}
+
+.offcanvas-body .nav-item a
+{
+    color: white;
+}
+.offcanvas-body .nav-item a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+#itemFooter
+{
+    color: white;
+}
+    #itemFooter a:hover 
+    {
+        text-decoration: none !important;
+        background-color:  rgba(141, 141, 141, 0.58) !important;
+    }
+    
+#copyFooter
+{
+    color: rgba(81, 126, 231, 0.457);
+}
+
+/* Estilos cesta */
+
+#botonPedido
+{
+    background-color: #3F64B5;
+    border: #CCCCCC;
+}
+
+#botonPedido:hover
+{
+    background-color: #3f64b58c;
+}
+
